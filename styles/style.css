@@ -213,6 +213,30 @@ main {
   justify-content: right;
 }
 
+/* client section  */
+
+#clients{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0;
+}
+
+#client-details{
+    display: flex;
+    gap: 24px;
+}
+
+#each-client{
+    display: flex;justify-content: center; align-items: center; gap: 8px
+}
+
+.middle-divider {
+    height: 90px; 
+    width: 1px;
+    background: linear-gradient(#00000000, #000000, #66666600); 
+}
+
 @media screen and (max-width: 600px) {
   nav {
     display: none;
@@ -252,5 +276,21 @@ main {
 
   #social-detail {
     padding: 10px 14px;
+  }
+
+  #clients{
+    flex-direction: column;
+    gap: 24px;
+  }
+  .middle-divider{
+    display: none;
+  }
+
+  #clients > div{
+    text-align: center;
+  }
+
+  #client-details{
+    flex-direction: column;
   }
 }
