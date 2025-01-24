@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RAAYA SOCOAL</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
-
     <!-- Navbar -->
-    <nav>
+    <nav class="max-w">
       <div>
         <img src="Images/Logo.png" alt="" />
       </div>
@@ -33,12 +36,111 @@
         <li><a class="navLink font text-lg" href="#">Pricing</a></li>
         <li><a class="navLink font text-lg" href="#">White level</a></li>
       </ul>
-      <div id="nav-right">
-        <button class="text-lg" id="login">Log in</button>
-        <button class="text-lg" id="book-demo">Book a demo</button>
+      <div>
+        <button class="text-lg circular-btn" id="login">Log in</button>
+        <button class="text-lg circular-btn" id="book-demo">Book a demo</button>
       </div>
     </nav>
 
-    
+    <!-- main -->
+    <main>
+      <div class="max-w">
+        <div id="banner">
+          <div id="banner-details">
+            <span id="sub-title" class="font"
+              ><i class="fa-solid fa-star"></i>All talents across the world</span
+            >
+            <h1 class="title" id="title-mob">
+              Create <span id="gradient-text">Short-From</span>
+              <span id="gradient-text"> Video Content</span> starting at
+              <span style="color: #d32e23">$99</span>/month.
+            </h1>
+            <p class="font text-lg" id="text-mob">
+              Tailored social media content of the highest quality, crafted for
+              your business. Shared on your channels only upon your approval.
+            </p>
+            <div style="display: flex; gap: 24px;">
+              <button class="text-lg circular-btn" id="start-btn">
+                Get started
+              </button>
+              <button class="text-lg circular-btn" id="book-demo">
+                Book a demo
+              </button>
+            </div>
+          </div>
+          <div id="banner-images">
+            <div class="play-video">
+              <img src="Images/image.png" alt="" class=""/>
+              <div class="blur">
+              </div>
+              <img src="Images/play-btn.png" alt="" class="socail-media-img" style="width: 36px; height: 36px;">
+            </div>
+            <div class="play-video">
+              <img src="Images/image.png" alt="" class=""/>
+              <div class="blur">
+              </div>
+              <img src="Images/play-btn.png" alt="" class="socail-media-img" style="width: 36px; height: 36px;">
+            </div>
+            
+          </div>
+        </div>
+
+        <div id="banner-footer" >
+          <div id="social-detail">
+            <h2 id="social">Social channel we work with</h2>
+            <div id="social-links">
+              <div class="each-social-link">
+                <img
+                  class="socail-media-img"
+                  src="Images/insta.png"
+                  alt=""
+                  style="width: 42px; height: 42px"
+                />
+              </div>
+              <div class="each-social-link">
+                <img
+                  class="socail-media-img"
+                  src="Images/fb.png"
+                  alt=""
+                  style="width: 28px; height: 28px"
+                />
+              </div>
+              <div class="each-social-link">
+                <img
+                  class="socail-media-img"
+                  src="Images/twitter.png"
+                  alt=""
+                  style="width: 28px; height: 28px"
+                />
+              </div>
+              <div class="each-social-link">
+                <img
+                  class="socail-media-img"
+                  src="Images/youtube.png"
+                  alt=""
+                  style="width: 28px; height: 28px"
+                />
+              </div>
+              <div class="each-social-link">
+                <img
+                  class="socail-media-img"
+                  src="Images/linkedin.png"
+                  alt=""
+                  style="width: 30px; height: 30px"
+                />
+              </div>
+              <div class="each-social-link" id="mob-none">
+                <img
+                  class="socail-media-img"
+                  src="Images/linkedin.png"
+                  alt=""
+                  style="width: 30px; height: 30px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
