@@ -67,3 +67,21 @@ nav > ul {
   font-weight: 500;
   cursor: pointer;
 }
+
+select {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+select:focus {
+  border: none;
+}
+
+#login:hover {
+  background: #d0d5dd50;
+}
+
+#book-demo:hover {
+  background: #a657e720;
+}
