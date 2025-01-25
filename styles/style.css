@@ -367,7 +367,7 @@ select:focus {
 }
 
 .text-img{
-  /* position: relative; */
+  display: flex;
 }
 
 .text-img img {
@@ -408,6 +408,23 @@ select:focus {
   color: white;
   font-size: 24px;
   font-weight: 500;
+}
+
+.like-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#like-img{
+  width: 45%;
+}
+
+#like-img-details{
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 @media screen and (max-width: 600px) {
@@ -478,4 +495,24 @@ select:focus {
     grid-template-columns: repeat(1, 1fr); 
 
   }
+
+  .like-container{
+    flex-direction: column-reverse;
+    }
+
+    #like-img{
+      width: 100%;
+      margin-top: 12px;
+    }
+    
+    #like-img-details{
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+
+    .text-img{
+      display: block;
+    }
 }
+
