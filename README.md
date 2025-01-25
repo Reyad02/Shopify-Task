@@ -22,3 +22,4 @@ This project is a responsive landing page for short-form video services. It is d
 3. Open the `index.html` file in a browser to view the landing page.
 
 ## Live Link
+https://shopify-task-self.vercel.app/
