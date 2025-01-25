@@ -16,7 +16,7 @@ This project is a responsive landing page for short-form video services. It is d
 ## How to Use
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Reyad02/Shopify-Task.git
    ```
 2. Open the project directory.
 3. Open the `index.html` file in a browser to view the landing page.
