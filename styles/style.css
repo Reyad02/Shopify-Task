@@ -194,7 +194,7 @@ select:focus {
   height: 150px;  */
 }
 
-.play-video>img{
+.play-video > img {
   object-fit: cover;
 }
 
@@ -246,7 +246,7 @@ select:focus {
   background-color: #f5f5f5;
 }
 
-.white-bg{
+.white-bg {
   background-color: white;
 }
 
@@ -289,7 +289,6 @@ select:focus {
 .radio-input {
   accent-color: #a554e6;
   cursor: pointer;
-
 }
 
 #Services-decription {
@@ -303,24 +302,24 @@ select:focus {
 
 .clips {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(3, 1fr);
   width: fit-content;
   gap: 24px;
   margin-top: 48px;
 }
 
-.clip-title{
+.clip-title {
   font-size: 20;
   font-weight: 500;
 }
 
-.clip-heading{
+.clip-heading {
   display: flex;
   align-items: start;
   gap: 24px;
 }
 
-.card{
+.card {
   padding: 20px 24px 32px 24px;
   border-radius: 12px;
   display: flex;
@@ -328,63 +327,57 @@ select:focus {
   gap: 24px;
 }
 
-.clip-img{
+.clip-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
 }
 
-.clip-footer{
+.clip-footer {
   font-size: 16px;
   font-weight: 400;
   color: #344054;
 }
 
-.small-card{
+.small-card {
   padding: 12px 24px 24px 16px;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  border: 1px solid #D0D5DD;
+  border: 1px solid #d0d5dd;
   border-radius: 16px;
 }
 
-.small-card-title{
+.small-card-title {
   font-size: 20px;
   font-weight: 500;
 }
 
-
-
-
-.img-text{
+.img-text {
   display: flex;
   gap: 10px;
   font-size: 48px;
   font-weight: bold;
   align-items: center;
+  justify-content: center;
 }
 
-.text-img{
+.text-img {
   display: flex;
 }
 
 .text-img img {
-  /* position: absolute; */
-  /* top: 0;
-  left: 0; */
   width: 30%;
   height: 30%;
   object-fit: cover;
 }
 
-.images{
+.images {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
-
 
 .next {
   width: 56px;
@@ -399,7 +392,7 @@ select:focus {
   cursor: pointer;
 }
 
-.next-page{
+.next-page {
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -410,21 +403,69 @@ select:focus {
   font-weight: 500;
 }
 
-.like-container{
+.like-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#like-img{
+#like-img {
   width: 45%;
 }
 
-#like-img-details{
+#like-img-details {
   width: 48%;
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+
+.influnecer-container {
+  position: absolute;
+  z-index: 1;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.big-review-card {
+  border: 1px solid #009fe254;
+  padding: 24px 37px;
+  border-radius: 14px;
+}
+
+.review-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.review-cards {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 28px;
+  margin-top: 20px;
+}
+
+#big-review-card-1 {
+  grid-column: 1 / span 6;
+}
+#big-review-card-2 {
+  grid-column: 7 / span 6;
+}
+#big-review-card-3 {
+  grid-column: 1 / span 4;
+}
+#big-review-card-4 {
+  grid-column: 5 / span 4;
+}
+#big-review-card-5 {
+  grid-column: 9 / span 4;
 }
 
 @media screen and (max-width: 600px) {
@@ -487,32 +528,38 @@ select:focus {
   .service-details {
     flex-direction: column;
   }
-  .clips{
-    grid-template-columns: repeat(1, 1fr); 
+  .clips {
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  .images{
-    grid-template-columns: repeat(1, 1fr); 
-
+  .images {
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  .like-container{
+  .like-container {
     flex-direction: column-reverse;
-    }
+  }
 
-    #like-img{
-      width: 100%;
-      margin-top: 12px;
-    }
-    
-    #like-img-details{
-      width: 100%;
-      align-items: center;
-      text-align: center;
-    }
+  #like-img {
+    width: 100%;
+    margin-top: 12px;
+  }
 
-    .text-img{
-      display: block;
-    }
+  #like-img-details {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-img {
+    display: block;
+  }
+
+  #big-review-card-1,
+  #big-review-card-2,
+  #big-review-card-3,
+  #big-review-card-4,
+  #big-review-card-5 {
+    grid-column: 1 / span 12;
+  }
 }
-
