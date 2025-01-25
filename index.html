@@ -12,9 +12,11 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="max-w">
+    <!-- nav for big device  -->
+
+    <nav class="max-w" id="normal-links">
       <div>
-        <img src="Images/Logo.png" alt="" />
+        <img src="Images/Logo.png" alt="" onclick="showNavlinks()" />
       </div>
       <ul>
         <li><a class="navLink font text-lg" href="#">Home</a></li>
@@ -38,11 +40,43 @@
       </ul>
       <div>
         <button class="text-lg circular-btn white-bg" id="login">Log in</button>
-        <button class="text-lg circular-btn white-bg" id="book-demo">
+        <button class="text-lg circular-btn white-bg book" id="book-demo">
           Book a demo
         </button>
       </div>
     </nav>
+
+    <!-- nav for small device  -->
+    <nav id="mobile-links" style="margin: 12px" class="max-w">
+      <div>
+        <img src="Images/Logo.png" alt="" onclick="showNavlinks()" />
+      </div>
+      <ul id="links-for-mobile">
+        <li style="margin-left: 5px;"><a class="navLink font text-lg" href="#">Home</a></li>
+        <li >
+          <select
+            name="services"
+            id="services"
+            class="font text-lg navLink"
+          >
+            <option value="service1">
+              <a class="navLink" href="#">Services</a>
+            </option>
+            <option value="service2">
+              <a class="navLink" href="#">Services</a>
+            </option>
+            <option value="service3">
+              <a class="navLink" href="#">Services</a>
+            </option>
+          </select>
+        </li>
+        <li style="margin-left: 5px;"><a class="navLink font text-lg" href="#">Portfolio</a></li>
+        <li style="margin-left: 5px;"><a class="navLink font text-lg" href="#">Reviews</a></li>
+        <li style="margin-left: 5px;"><a class="navLink font text-lg" href="#">Pricing</a></li>
+        <li style="margin-left: 5px;"><a class="navLink font text-lg" href="#">White level</a></li>
+      </ul>
+    </nav>
+
     <main>
       <!-- Hero -->
       <section id="hero" class="gray-bg">
@@ -68,7 +102,7 @@
                 <button class="text-lg circular-btn" id="start-btn">
                   Get started
                 </button>
-                <button class="text-lg circular-btn" id="book-demo">
+                <button class="text-lg circular-btn book" id="book-demo">
                   Book a demo
                 </button>
               </div>
@@ -489,7 +523,7 @@
       <!-- business videos  -->
       <section class="gray-bg" style="padding: 28px 0">
         <div class="max-w">
-          <div class="img-text" style="text-align: left">
+          <div class="img-text" id="business-heading">
             <h1
               class="text-img"
               style="
@@ -518,8 +552,13 @@
             </h1>
           </div>
           <div style="position: relative">
+            <div style="display: none" class="prev" id="business-prev">
+              <p class="prev-page">&#8249;</p>
+            </div>
+
             <div class="images" style="margin-top: 40px">
               <div
+                id="business-first-img"
                 style="
                   display: flex;
                   flex-direction: column;
@@ -633,8 +672,39 @@
                 </div>
                 <p style="font-size: 20px; color: #344054">Home Services</p>
               </div>
+
+              <div
+                id="business-last-img"
+                style="
+                  display: none;
+                  flex-direction: column;
+                  gap: 20px;
+                  align-items: center;
+                "
+              >
+                <div class="play-video" style="width: 300px; height: 400px">
+                  <img
+                    src="Images/health.png"
+                    alt=""
+                    style="
+                      width: 100%;
+                      height: 100%;
+                      border-radius: 20px;
+                      filter: brightness(80%);
+                    "
+                  />
+                  <div class="blur"></div>
+                  <img
+                    src="Images/play-btn.png"
+                    alt=""
+                    class="socail-media-img"
+                    style="width: 36px; height: 36px"
+                  />
+                </div>
+                <p style="font-size: 20px; color: #344054">Health & Wealth</p>
+              </div>
             </div>
-            <div class="next">
+            <div class="next" id="business-next">
               <p class="next-page">&#8250;</p>
             </div>
           </div>
@@ -644,7 +714,7 @@
       <!-- personal brands  -->
       <section class="gray-bg" style="padding: 28px 0 60px 0">
         <div class="max-w">
-          <div class="img-text" style="text-align: left">
+          <div class="img-text" id="brands-heading">
             <h1
               class="text-img"
               style="
@@ -673,8 +743,12 @@
             </h1>
           </div>
           <div style="position: relative">
+            <div style="display: none" class="prev" id="brands-prev">
+              <p class="prev-page">&#8249;</p>
+            </div>
             <div class="images" style="margin-top: 40px">
               <div
+                id="brands-first-img"
                 style="
                   display: flex;
                   flex-direction: column;
@@ -788,8 +862,39 @@
                 </div>
                 <p style="font-size: 20px; color: #344054">Home Services</p>
               </div>
+
+              <div
+                id="brands-last-img"
+                style="
+                  display: none;
+                  flex-direction: column;
+                  gap: 20px;
+                  align-items: center;
+                "
+              >
+                <div class="play-video" style="width: 300px; height: 400px">
+                  <img
+                    src="Images/cycle.jpg"
+                    alt=""
+                    style="
+                      width: 100%;
+                      height: 100%;
+                      border-radius: 20px;
+                      filter: brightness(80%);
+                    "
+                  />
+                  <div class="blur"></div>
+                  <img
+                    src="Images/play-btn.png"
+                    alt=""
+                    class="socail-media-img"
+                    style="width: 36px; height: 36px"
+                  />
+                </div>
+                <p style="font-size: 20px; color: #344054">Health & Wealth</p>
+              </div>
             </div>
-            <div class="next">
+            <div class="next" id="brands-next">
               <p class="next-page">&#8250;</p>
             </div>
           </div>
@@ -1602,6 +1707,7 @@
         </div>
       </section>
     </main>
+    <!-- footer -->
     <footer style="padding: 28px 0">
       <div class="max-w">
         <div class="footer-part">
@@ -1618,7 +1724,7 @@
                 Log in
               </button>
               <button
-                class="text-lg circular-btn white-bg"
+                class="text-lg circular-btn white-bg book"
                 id="book-demo"
                 style="
                   margin-left: 20px;
@@ -1699,7 +1805,9 @@
         <div style="padding-top: 40px; padding-bottom: 20px">
           <hr style="color: #d0d5dd" />
         </div>
-        <p style="text-align: center; font-size: 14px;">© 2024 TaxDax. All rights reserved.</p>
+        <p style="text-align: center; font-size: 14px">
+          © 2024 TaxDax. All rights reserved.
+        </p>
       </div>
     </footer>
   </body>

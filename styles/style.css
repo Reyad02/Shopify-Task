@@ -391,8 +391,31 @@ select:focus {
   border-radius: 50%;
   cursor: pointer;
 }
+.prev {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  background: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
 
 .next-page {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.prev-page {
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -499,16 +522,23 @@ select:focus {
   text-decoration: none;
 }
 
-
 #footer-4th-part {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
+#mobile-links {
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
-  nav {
+  #normal-links {
     display: none;
+  }
+
+  #mobile-links {
+    display: block;
   }
 
   #banner {
@@ -619,24 +649,174 @@ select:focus {
     text-align: center;
   }
 
-  #footer-2nd-part{
+  #footer-2nd-part {
     align-items: center;
   }
 
-  #footer-3rd-part{
+  #footer-3rd-part {
     align-items: center;
   }
 
-  #footer-4th-part{
-     align-items: center;
+  #footer-4th-part {
+    align-items: center;
   }
 
-  input{
+  input {
     width: 90%;
-  };
-  textarea{
+  }
+  textarea {
     width: 100%;
-
   }
 
+  #business-heading {
+    text-align: center;
+  }
+
+  #brands-heading {
+    text-align: center;
+  }
+
+  .next {
+    display: none;
+  }
+
+  .prev {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  #normal-links {
+    display: none;
+  }
+  #banner {
+    flex-direction: column;
+  }
+
+  #banner-details {
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #banner-footer {
+    justify-content: center;
+  }
+
+  #clients {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .middle-divider {
+    display: none;
+  }
+
+  #clients > div {
+    text-align: center;
+  }
+
+  #client-details {
+    flex-direction: column;
+  }
+
+  .service-details {
+    flex-direction: column;
+  }
+  .clips {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .like-container {
+    flex-direction: column-reverse;
+  }
+
+  #like-img {
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  #like-img-details {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-img {
+    display: block;
+    text-align: center;
+  }
+
+  #big-review-card-3 {
+    grid-column: 1 / span 6;
+  }
+  #big-review-card-4 {
+    grid-column: 7 / span 6;
+  }
+  #big-review-card-5 {
+    grid-column: 1 / span 6;
+  }
+
+  .footer-part {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  #footer-1st-part {
+    align-items: center;
+  }
+
+  #footer-des {
+    text-align: center;
+  }
+
+  #footer-2nd-part {
+    align-items: center;
+  }
+
+  #footer-3rd-part {
+    align-items: center;
+  }
+
+  #footer-4th-part {
+    align-items: center;
+  }
+
+  input {
+    width: 90%;
+  }
+  textarea {
+    width: 100%;
+  }
+
+  #business-heading {
+    text-align: center;
+  }
+
+  #brands-heading {
+    text-align: center;
+  }
+  #normal-links {
+    display: none;
+  }
+
+  #mobile-links {
+    display: block;
+  }
+
+  #links-for-mobile {
+    display: none;
+  }
+
+  .next {
+    display: none;
+  }
+
+  .prev {
+    display: none;
+  }
 }
